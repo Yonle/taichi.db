@@ -2,7 +2,6 @@
   "author": {
     "name": "Yonle"
   },
-  "bundleDependencies": false,
   "deprecated": false,
   "description": "A simple database manager build with JSON wrapper and easy for use.",
   "keywords": [
@@ -11,6 +10,11 @@
     "simple-database"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yonle/taichi.db.git"
+  },
+  "files": "*",
   "main": "lib/taichi.db.js",
   "name": "taichi.db",
   "scripts": {
