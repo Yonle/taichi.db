@@ -1,4 +1,4 @@
-# ☯ Taichi.db [Advanced]
+![taichi.db logo](https://cdn.glitch.com/f5388e9a-24f4-48f8-b9f9-0fae6857b5ad%2F20201129_124656.png?v=1606629310700)
 A simple database manager build with JSON wrapper and easy for use.
 ## ☯ Getting Started
 ```bash
