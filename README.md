@@ -1,4 +1,4 @@
-![taichi.db logo](https://cdn.glitch.com/f5388e9a-24f4-48f8-b9f9-0fae6857b5ad%2F20201129_124656.png?v=1606629310700)
+![taichi.db logo](https://cdn.glitch.com/fd41d1c0-05df-4445-b6b4-275daa0a6f28%2F20201202_181053.png?v=1606907546345)
 A quick, simple, and Realtime database manager build with JSON wrapper and easy for use.
 ## ☯ Getting Started
 ```bash
@@ -57,13 +57,13 @@ taichidb.rem("alot of value")
 // ADVANCED METHOD
 
 taichidb.set(628991, { HP: 100 })
-//Custom Set
+//Custom Set with Object
 
 //Read
 taichidb.get(628991, "HP")
 
 
-// Custom JSON file //
+// Manage your own JSON file //
 taichidb.cdb("mydatabase.json")
 
 /* TIP:
