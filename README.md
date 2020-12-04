@@ -1,76 +1,69 @@
-![taichi.db logo](https://cdn.glitch.com/f5388e9a-24f4-48f8-b9f9-0fae6857b5ad%2F20201129_124656.png?v=1606629310700)
-A simple database manager build with JSON wrapper and easy for use.
+![taichi.db logo](https://cdn.glitch.com/fd41d1c0-05df-4445-b6b4-275daa0a6f28%2F20201202_181053.png?v=1606907546345)
+A quick, simple, and Realtime database manager build with JSON wrapper and easy for use.
+## ☯ Feature
+ - Lightweight, Quick, and Realtime Database Manager,
+ - Build with 0 Dependencies,
+ - Easy to use,
+ - Open Sourc
 ## ☯ Getting Started
 ```bash
 npm i taichi.db
 ```
 **NOTE**: Before Upgrading, Please do Backup data if you don't want lose any data.
-## ☯ Some Docs
-```js
-const taichidb = require("taichi.db")
+## ☯ Docs
+|Method|Description|Parameters|return|
+|------|-----------|----------|------|
+|`get`|A function that gets the name of the object in the database.|A parameter that gets the object name|string, number, boolean, or object|
+|`set`|A function that can change the value of the name of the object.|a parameter that takes the name of the object and value to change|-|
+|`push`|A push array function from the name of the object|A parameter that gets an object name with value for push|-|
+|`all`|A function that gets all objects from the database|-|Object|
+|`rm`|A function that removes the name of the object with the value in the database|A function that gets the name of the object in the database.|-|
+|`import`|A function that imported JSON files|A parameter that gets the file name for import|-|
+|`export`|A function that exports the database into JSON file|A parameter that gets the file name for export (Optional)|-|
+## ☯ Example
+```javascript
+const taichidb = require('taichi.db')
+const db = taichidb('student.json') // This is optional. If it's not provide any filename, Taichi db will uses  default path (at node_modules/taichi.db/db.json
+
+// Object example
+db.set('Michael', {
+  grade: '7',
+  age: 14,
+  gender: 'Male',
+  attitude_value: 'B',
+  total_scores: 778
+})
+
+// Get value
+var michael = db.get('Michael')
+// Do anything...
 
 
-//Create/Update Value!
-taichidb.set("test", "this is the result!")
-
-//Get the value....
-taichidb.get("test")
-//Output: "this is the result!"
-
-
-
-
-//Array EXAMPLE//
-
-//Try create array value with `push` function. 
-taichidb.push("alot of value", "PUSH AGAIN!!")
-
-//Get the Array value
-taichidb.get("alot of value")
-//Output: ["PUSH AGAIN!!"]
-
-//Push value
-taichidb.push("alot of value", "AGAIN!!!")
-//Get the Pushed Value
-taichidb.get("alot of value")
-//Output: ["PUSH AGAIN!!", "AGAIN!!!"]
-
-
-
-//Get all Value
-taichidb.all()
-// Output ? Try yourself ;)
-
-//Import your JSON db to our DB!
-//Your DB is Private. We don't read your DB. And your DB isn't public.
-taichidb.import("filename.json")
-//me.db will overwritted. your JSON file isn't overwritted anymore.
-
-//Backup / Export your Taichi.db as File!
-taichidb.export("filename.json")
-
-//Remove some value
-taichidb.rem("alot of value")
-//This is just made the output of value as `null`. 
-
-
-// ADVANCED METHOD
-
-taichidb.set(628991, { HP: 100 })
-//Custom Set
-
-//Read
-taichidb.get(628991, "HP")
-
-
-// Custom JSON file //
-taichidb.cdb("mydatabase.json")
-
-/* TIP:
-If you're host at glitch.com, Like auto reinstall Packages, 
-Use cdb function for saving your changes in realtime at your JSON file.
-*/
+// Remove example
+db.rm('Michael')
 ```
 
+## ☯ License
+Copyright (c) 2020 Yonle
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ## ☯ Community
-Any question or Doubt can join our [Discord Server](https://discord.gg/9S3ZCDR)
+ - [Discord](https://discord.gg/9S3ZCDR)
+ - [Telegram](https://t.me/taichidb))
+
