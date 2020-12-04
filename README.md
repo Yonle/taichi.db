@@ -4,7 +4,7 @@ A quick, simple, and Realtime database manager build with JSON wrapper and easy 
  - Lightweight, Quick, and Realtime Database Manager,
  - Build with 0 Dependencies,
  - Easy to use,
- - Open Source!
+ - Open Sourc
 ## ☯ Getting Started
 ```bash
 npm i taichi.db
