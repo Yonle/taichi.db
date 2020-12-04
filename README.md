@@ -23,7 +23,7 @@ npm i taichi.db
 ## ☯ Example
 ```javascript
 const taichidb = require('taichi.db')
-const db = taichidb('student.json') // This is optional. If it's not provide any filename, Taichi db will uses  default path (at node_modules/taichi.db/db.json
+const db = taichidb('student.json') // Filename is optional. If it's not provide any filename, Taichi db will uses  default path (at node_modules/taichi.db/db.json)
 
 // Object example
 db.set('Michael', {
