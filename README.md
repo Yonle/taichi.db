@@ -1,7 +1,7 @@
 ![taichi.db logo](https://cdn.glitch.com/fd41d1c0-05df-4445-b6b4-275daa0a6f28%2F20201202_181053.png?v=1606907546345)
 A quick, simple, and Realtime database manager build with JSON wrapper and easy for use.
 ## ☯ Feature
- - Lightweight, Quick, and Realtime Database Manager,
+ - Quick, Lightweight, Simple, and Realtime Database Manager,
  - Build with 0 Dependencies,
  - Easy to use,
  - Open Sourc
@@ -23,7 +23,8 @@ npm i taichi.db
 ## ☯ Example
 ```javascript
 const taichidb = require('taichi.db')
-const db = taichidb('student.json') // Filename is optional. If it's not provide any filename, Taichi db will uses  default path (at node_modules/taichi.db/db.json)
+
+const db = taichidb('student.json') // Filename is optional. If it's not provide any filename, Taichi db will uses default path (at node_modules/taichi.db/db.json)
 
 // Object example
 db.set('Michael', {
@@ -33,6 +34,7 @@ db.set('Michael', {
   attitude_value: 'B',
   total_scores: 778
 })
+// You don't need Async in Taichi.db.
 
 // Get value
 var michael = db.get('Michael')
